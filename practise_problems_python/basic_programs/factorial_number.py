@@ -1,0 +1,27 @@
+
+# Using math.factorial()
+import math
+n=6
+print(math.factorial(n))
+
+
+# Using For Loop
+n=6
+if n <0:
+    print("Factorial is not defined for negative numbers")
+else:
+    f=1
+    for i in range(1,n+1):
+      f *=i
+print(f)        
+
+
+# Using Recursive Function
+def fact(n):
+   if n <0:
+      return "Factorial is not defined for negative numbers"
+   return 1 if n<=1 else n*fact(n-1)
+
+print(fact(6))
+print(fact(5))
+print(fact(-3))
